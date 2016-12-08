@@ -1,0 +1,314 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\textheight=9.5in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1} I  #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} \\ \underline{\textbf{\emph{#3}}} \hfill  #2\\  }}
+\newcommand{\employee}[4]{{ \textbf{#1}, #4 \\ \underline{\textbf{\emph{#3}}} \hfill  #2\\  }}
+
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\ \vspace*{4pt}
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+
+% #3 \hfill #5 \\ \textbf{#1} #2 \\ #4
+\newcommand{\school}[5]{
+  \textbf{#1} #2 \hfill  #5 \\ #3, #4
+\vspace*{5pt}
+}
+%\newcommand{\objective}[1]{#1}
+
+% END RESUME DEFINITIONS
+
+
+\usepackage[hidelinks]{hyperref}
+
+\urlstyle{same}
+\providecommand*\emaillink[1]{\nolinkurl{#1}}
+\providecommand*\email[1]{\href{mailto:#1}{\emaillink{#1}}}
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Ozan Iskilibli}
+{3473 N 1st St, Unit~322, 95134, San Jose, CA, USA}
+{1 (412) 499-0591 $\&$ \email{ozaniskilibli@gmail.com}}
+
+
+\vspace*{5pt}
+
+%\header{Background Summary}
+%A dynamic, collaboration oriented individual who seeks to apply his analytical skills to business challenges in evolving, cross-cultural business environments, keeping innovative with clients at the heart.\vspace*{5pt}
+
+% A dynamic, collaboration oriented individual who seeks to apply his analytical, problem solving skills to business challenges in evolving, cross-cultural business environments, keeping innovative with people, or consumers at the heart.\vspace*{5pt}
+
+
+%To develop effective management skills particularly for high-tech setups and management consulting businesses. \vspace*{6pt}
+%To utilize my management skills in particularly high-tech setups. \vspace*{6pt}
+
+
+\vspace*{5pt}
+
+
+
+
+\header{Employment}
+
+\employer{Oracle, Santa Clara, CA, USA}{9/2014 -- Present}{Software Engineer}
+	\begin{achievements}
+    	\item Developed RESTful web services on Tomcat -- Seams -- RESTEasy and Tomcat -- Guice -- Jersey stacks that enabled scalable growth of Oracle Virtual Network Services.
+		\item Engineered Java back-end for L7 server load balancing feature that enabled customers to route the client calls over their cloud based on incoming HTTP request contents.
+		\item Developed a plugin for Oracle Enterprise Manager Cloud Control that linked the networking environment to the cloud administration that enabled monitoring \& managing network services, load \& performance on cloud level.
+	\item Developed an object-oriented framework in SystemVerilog to verify link layer front-end of InfiniBand network adapters. Built system models that by simulating network bottlenecks, enabled accurate performance measurements and typical loads before field testing.
+	\item Designed Verilog modules for I/O virtualization of Oracle servers, that helped migration to a new supplier and to reduce the manufacturing costs by 3x.
+	\end{achievements}
+
+
+
+
+	
+	
+\employer{Carnegie Mellon University, Pittsburgh, PA, USA}{1/2013 -- 8/2014}{Research Assistant}
+
+	\begin{achievements}
+
+%    \item Developed MATLAB programs that provided the basis forImage processing CHANGEME
+%        \item Developed MATLAB programs that was a proof of concept in NSF proposals for artificial intelligence in hardware, 
+%    \item Designed the first micro-electromechanical systems (MEMS) based programmable artifical intelligence, employing the largest scale MEMS integration effort known to date, as part of his master thesis, leveraging applied physics, device and circuit experts.
+%     \item Designed the first MEMS based programmable artificial intelligence, by proposing a futuristic hardware development point of view that employed the largest scale MEMS integration effort known to date, as part of his master thesis.
+%    \item Designed a futuristic neural network for pattern recognition scenarios, by deploying the evaluation engine with programmable MEMS devices for the first time ever. Optimizing the system performance with the genetic algorithm, proposed the largest scale MEMS integration effort known to date.
+
+\item Designed a futuristic AI for pattern recognition scenarios in image processing. Optimizing the system performance with the genetic algorithm, developed the largest scale integration effort of emerging technologies  known to date.
+    
+    %\item Led the implementation efforts of a 3-person team that prototyped the first programmable hardware solution in artificial intelligence by innovatively combining cutting-edge CMOS technologies developed inhouse with emerging technologies developed together with a Stanford lab.
+        \item Led the implementation efforts of a team of 3 that prototyped a first of its kind artificial intelligence solution by innovatively combining cutting-edge technologies developed in-house with emerging technologies developed together with a Stanford lab.
+%    \item Implemented the largest high scale micro-electromechanical system (MEMS) integration project known to date as part of his master thesis, leveraging applied physics, device and circuit experts.
+    \item Modeled an infrared camera imager in MATLAB and optimized its performance with analytical optimization methods. Achieved 2 orders of magnitude better performance than its class.
+    %Prototyped the first reconfigurable analog neural network on a silicon chip, integrating the standard CMOS with emerging technologies such as PCM \& RRAM. 
+    %\item Prototyped the first reconfigurable analog neural network on a silicon chip, integrating the standard CMOS with emerging technologies such as PCM \& RRAM. 
+%	\item Built detailed models for AlN resonators to capture power-speed trade-off dependent on the geometry, in order to design nano-scale resonators.
+%	\item Designed the first scalable AlN neural network circuit, without any CMOS components in the signal processing path.
+	%\item Modeled \& designed a capacitive MEMS sensor for microbolometer applications. Maximizing thermal actuation efficiency, achieved 2 orders of magnitude better sensitivity than its class.
+	\end{achievements}
+
+
+
+
+
+
+% \employer{Texas Instruments, Division of Low Power Microcontrollers, Munich, BY, Germany}{03.2012 -- 10.2012}{Researcher}
+
+\employer{Texas Instruments, Munich, Germany}{3/2012 -- 10/2012}{Research Engineer}
+	\begin{achievements}
+        \item Designed a human-machine interface by innovatively translating product design know-how along with users' real-life challenges into a mixed integer problem. Developed an optimization engine based on depth-first-search algorithm that reduced the running time from hours to minutes, while achieving 100x better performance in product's class.
+    \item Leveraging design, integration, systems and application teams, built a detailed MATLAB model that, while adding no extra manufacturing cost, optimized for conflicting performance goals.
+    
+	%\item Designed a touch sensing interface for TI, that enabled the access of their low-power microcontrollers into advanced human-machine interface markets.
+%	\item Designed an ultra-low power touch sensing interface for TI's low power microcontroller product lines.
+
+%     \item Innovatively combined circuit knowledge and optimization results together with the product's real-life challenges in the field deployment in order to deliver best-of-class touch interface.
+%     \item Innovatively combined the optimization algorithms and the design know-how together with the product's real-life challenges in order to improve the energy cost of sensitivity by 100x.
+   % \item Innovatively translated the design know-how together with the product's real-life challenges and costs into a mixed integer problem and coded a depth-first-search algorithm that reduced the optimization time from days to minutes and improved the energy cost of sensitivity by 100x.
+   % \item Leveraging design, integration, systems and application teams, built a detailed MATLAB model that optimized for the longest battery life and highest resolution simultaneously, while adding no extra manufacturing cost.
+    %\item Innovatively combined circuit knowledge and optimization results together with the real-life challanges in product deployement  at device, package and board level in order to deliver best of its class touch interface.
+%     \item Synthesized additional smart system level strategies to further save months-long battery life.
+    %\item Delivered seamlessly integratable IP, along with smart strategies for power saving. \emph{insert the word \underline{green}}
+    %\item Designed an ultra low power sensor interface
+    %capacitive sensor interface based on $\Delta \Sigma$ data conversion technique.
+	%\item Went through exploration, modelling, refinement, abstraction cycles for choosing and building a means for converting the values read from the sensor into digital words.
+	%\item Built the sensor interface out of an ultra-low-power second order $\Delta \Sigma$ analog-to-digital converter.
+	%\item Developed smart system-level strategies for further increasing energy efficiency.
+	%\item Built a detailed MATLAB routine as an optimization engine for practical circuit implementation.
+	\end{achievements}
+
+
+
+
+
+% \employer{TUM, Institute of Integrated Systems, Munich, BY, Germany}{08.2011 -- 09.2011} {Research Assistant (Wissenschaftliche Hilfskraft)}
+% 	\begin{achievements}
+% 	\item As part of a 2-person team, ported a single-core defined real-time operating system and enabled execution of routines in multicore/ single-chip-cloud type processors, in C++.
+%     %\item Ported a single-core defined real time operating system, the FreeRTOS, for MPSoCs
+% 	%\item Modifying the OS scheduling routines in C++, enabled the OS to broadcast interrupts throughout the chip and to micro-manage each processor core.
+% 	\end{achievements}
+
+
+
+
+
+% \employer{GE Global Research, Munich, Germany}{2/2011 -- 6/2011}{Intern}
+% 	\begin{achievements}
+% % 	\item Led the product validation efforts of the multi-functional 4-person hardware consulting team.
+% %     \item 1 By developing MATLAB programs that recognize the offset and noise patterns over the imager array, found an optimal operation point re-functionalized current product. 
+% %     \item 2 Developed MATLAB programs that recognize the offset and noise patterns over the imager array, that enabled the product to  become operational.
+% %     \item 3 Developed MATLAB programs that recognize offset and noise patterns over the imager array in order to enable operation
+% %     \item 4 Developed MATLAB programs to characterize critical manufacturing flaws of the imager array and thereby enabling product operation.
+% %     \item Developed MATLAB programs to characterize a medical imager array's performance variations caused by manufacturing process and device's operation environment, and by recognizing offset \& noise patterns with the program, proposed a device configuration that enabled the product operation for the first time.
+%      \item Developed MATLAB scripts to characterize a medical imager array's performance variations, and by recognizing the offset \& the noise patterns, proposed a device configuration that enabled the product operation for the first time.
+%     %\item Measured and characterized a silicon prototype for medical imaging purposes.
+% 	%\item Developed MATLAB scripts to recognize noise patterns over the measured sensor matrix and find optimal operating points for a targeted calibration.
+% 	%\item Designed harsh environment electronics as part of consulting the intercontinental healthcare business unit.
+% %     \item Developed MATLAB scripts to aid the physical design of novel sensor networks, reducing development time 2x.
+%     \item Developed a binary search algorithm that models the physical interface of novel sensor networks along with process variations and noise, that reduced development time 10x.
+%     %($250\,^{\circ}\mathrm{C}$) for a jet engine microcontroller.
+% 	\end{achievements}
+
+
+
+
+%\employer{ST Ericsson, Istanbul, Turkey}{07.2009 -- 08.2009}{Intern}
+%	\begin{achievements}
+%	\item Designed a full-flow alarm clock using Cadence tools and Modelsim.
+%	\item Implemented the data and control path at RTL level and the clock generation circuit transistor level.
+%	\item Verified the integrated system with digital-on-top methods.
+%	\end{achievements}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Skills}
+\begin{achievements}
+\item Java, Bash scripting, SVN, Linux, MATLAB, RESTful APIs, Web programming, Object-oriented design, Data structures, Algorithms, Neural Networks, Image processing.
+% \item Creative: MS Office, \LaTeX.
+% \item Languages: English, German (intermediate), Italian~(elementary).
+\end{achievements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Education}
+\school
+{Carnegie Mellon University (CMU)}
+{Pittsburgh, PA, USA}
+{\textbf{MS} in Electrical and Computer Engineering}
+{GPA: 3.96/4.00
+}{1/2013 -- 8/2014}
+{ 
+%\vspace*{-5pt} Coursework: Entrepreneurship - Business model canvas, customer development and capstone projects. \\ \vspace*{5pt}
+}\\
+\school
+{University of Technology, Munich (TUM)}
+{Munich, Germany}
+{\textbf{MS} in Communications Engineering}
+{GPA: 3.90/4.00}{10/2010 -- 9/2012}
+{
+%{\vspace*{-5pt} Coursework: Engineering Management - project management, product-life-cycle management}\\ \vspace*{5pt}}
+}\\ 
+% \school
+% {Istanbul Technical University (ITU)}
+% {Istanbul, Turkey}
+% {\textbf{BS} in Electronics Engineering (EE)}
+% {GPA: 3.86/4.00}{09.2006 -- 06.2010}
+% { }\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\header{Achievements}
+\begin{achievements}
+\item Recipient of Carnegie Institute of Technology, Dean's tuition fellowship (full tuition coverage) (2013).
+% \item Ranked \textbf{2$^{nd}$} in ITU EE program out of 90, \textbf{3$^{rd}$} in ITU Dept. of EECS out of 400.
+%\item Recipient of Nortel Networks Turkey Merit Scholarship (2009 \& 2010).
+% \item Student representative of his class, organized graduation ball and yearbook (2009 \& 2010).
+%\item Ranked in the \textbf{top 250} in National GRE (ALES) among 150,000 examinees (2008).
+%\item Ranked in the \textbf{top 2000} in National University Placement Exam (OSS) among 2M examinees (2006).
+%\item Chosen for \textbf{National Finswimming Team}, in 2005.
+\item \textbf{Broke 4 U18 National Records} in National Finswimming Championships in 2004 and 2005.
+\item \textbf{Team captain} who led his team to U18 victory and 3$^{rd}$ place in all age categories in 2004 and 2005.
+% \item Member of CMU Ballroom Dance Club, keen traveller and enjoys wine tasting.
+\end{achievements}
+
+
+
+
+% \clearpage 
+
+% \vspace*{-44pt}
+% \contact{Ozan Iskilibli}
+% {330 Crescent Village Circle, Apt.~1346, 95134, San Jose, CA, USA}
+% {+1-412-499-0591 $\&$ \email{ozaniskilibli@gmail.com}}
+%\vspace*{20pt}
+
+\end{document}
+
+
+\header{Achievements and Interests}
+\begin{achievements}
+\item Recipient of Carnegie Institute of Technology, Dean's tuition fellowship (full tuition coverage) (2013).
+% \item Ranked \textbf{2$^{nd}$} in ITU EE program out of 90, \textbf{3$^{rd}$} in ITU Dept. of EECS out of 400.
+%\item Recipient of Nortel Networks Turkey Merit Scholarship (2009 \& 2010).
+% \item Student representative of his class, organized graduation ball and yearbook (2009 \& 2010).
+%\item Ranked in the \textbf{top 250} in National GRE (ALES) among 150,000 examinees (2008).
+%\item Ranked in the \textbf{top 2000} in National University Placement Exam (OSS) among 2M examinees (2006).
+%\item Chosen for \textbf{National Finswimming Team}, in 2005.
+\item \textbf{Broke 4 U18 National Records} in National Finswimming Championships in 2004 and 2005.
+\item \textbf{Team captain} who led his team to U18 victory and 3$^{rd}$ place in all age categories in 2004 and 2005.
+\item Member of CMU Ballroom Dance Club, keen traveller and enjoys wine tasting.
+\end{achievements}
+
+
+
+
+\end{document}
+
+\header{Interests}
+\begin{achievements}
+\item Degustation of Northeast Spanish and French (Burgundy) wines.
+\item CMU, member of Ballroom Dance Club for Latin American dances.
+\end{achievements}
+
+\header{Skills}
+\begin{achievements}
+\item Technical: MATLAB, Cadence Custom IC (Virtuoso, Spectre, Assura, Calibre, PEX, MMSIM), SystemVerilog, VerilogA, COMSOL, Java, Unix.
+\item Editing: MS Office (Word, Excel, Powerpoint, Visio), LaTeX.
+\item Language: Turkish (native), English (business fluent), German (intermediate), Italian~(elementary).
+\end{achievements}
+
+
+
+	\begin{achievements}
+	\item Focused on optimizing of the power consumption in infrared imager scenarios in both sensitization and data conversion processes.
+	\item Generated detailed MATLAB routines and Excel spreadsheets to model a capacitive MEMS sensor.
+	\item Validated the theoretical results in COMSOL Multiphysics.
+	\item Developed readout systems based on statistical measurement techniques.
+	\item Achieved 100 times improved results compared to state-of-the-art.
+	\end{achievements}
+    
+    
+    
+    
+    % Explaining something simply to a customer
